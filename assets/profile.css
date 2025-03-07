@@ -1,0 +1,83 @@
+/* Profile Page Styles */
+.profile-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.profile-info p {
+    margin: 0.8rem 0;
+    color: #555;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.profile-picture input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile-picture button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.profile-picture button:hover {
+    background-color: #0056b3;
+}
+
+.account-settings {
+    display: flex;
+    gap: 1rem;
+}
+
+.account-settings .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+}
+
+.account-settings .btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-picture {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .profile-section {
+        padding: 1rem;
+    }
+}
